@@ -81,7 +81,7 @@ $preference->payment_methods = [
 $preference->external_reference = "arturohrdez@outlook.com";
 
 //Webhook
-$preference->notification_url   = base_url()."webhooks/webhook.php";
+$preference->notification_url   = base_url()."webhooks/webhooks.php";
 
 //Genera la preferencia
 $preference->save();

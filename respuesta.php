@@ -7,7 +7,7 @@ $data_response = $_REQUEST;
 
 if ($data_response["id"] == "success") {
 	$msg                = "Pago Aprobado";
-	$preferenceId       = $data_response["preference_id"];
+	$preference_id      = $data_response["preference_id"];
 	$external_reference = $data_response["external_reference"];
 }elseif($data_response["id"] == "failure"){
 	$msg = "El pago fue rechazado";
@@ -39,7 +39,7 @@ if ($data_response["id"] == "success") {
             	<div class="jumbotron">
             		<h1><?php echo $msg; ?></h1>
 
-            		<?php  echo isset($preferenceId) ? "<h2>preference_id : ".$preference_id."</h2>" : "";?>
+            		<?php  echo isset($preference_id) ? "<h2>preference_id : ".$preference_id."</h2>" : "";?>
             		<?php  echo isset($external_reference) ? "<h2>external_reference : ".$external_reference."</h2>" : "";?>
             	</div>
 
