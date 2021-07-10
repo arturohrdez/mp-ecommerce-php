@@ -78,7 +78,7 @@ $preference->payment_methods = [
 ];
 
 //Número de orden de pedido
-$preference->external_reference = "arturohrdez@gmail.com";
+$preference->external_reference = "arturohrdez@outlook.com";
 
 //Webhook
 $preference->notification_url   = base_url()."webhooks/webhook.php";
