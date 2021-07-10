@@ -82,10 +82,6 @@ $preference->external_reference = "arturohrdez@outlook.com";
 
 //Webhook
 $preference->notification_url   = base_url()."webhooks/webhooks.php";
-echo "<pre>";
-var_dump($preference);
-echo "</pre>";
-die();
 
 //Genera la preferencia
 $preference->save();
