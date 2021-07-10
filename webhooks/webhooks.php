@@ -8,7 +8,7 @@ $response_body = file_get_contents('php://input',true);
 $response_json = json_decode($response_body,true);
 
 //Gaurda la respuesta json
-creaDocSeguimiento($response_body);
+creaDocSeguimiento($response_json["id"],$response_body);
 http_response_code(200);
 
 switch($response_json["type"]) {

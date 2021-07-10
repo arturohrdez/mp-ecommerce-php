@@ -9,8 +9,8 @@ function base_url(){
     return $_SERVER['HTTP_REFERER'];
 }
 
-function creaDocSeguimiento($response_body){
-    file_put_contents('notificaciones/'.$data->id.".json", $response_body);
+function creaDocSeguimiento($id,$response_body){
+    file_put_contents('notificaciones/'.$id.".json", $response_body);
     /*$file = fopen("pagosLog.json", "a");
     fwrite($file, $response_body. PHP_EOL);
     fclose($file);*/
