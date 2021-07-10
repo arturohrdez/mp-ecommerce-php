@@ -10,9 +10,9 @@ function base_url(){
 }
 
 function creaDocSeguimiento($id,$response_body){
-    file_put_contents('notificaciones/'.$id.".json", $response_body);
-    /*$file = fopen("pagosLog.json", "a");
+    //file_put_contents('notificaciones/'.$id.".json", $response_body);
+    $file = fopen("pagosLog.json", "a");
     fwrite($file, $response_body. PHP_EOL);
-    fclose($file);*/
+    fclose($file);
 }
 ?>
