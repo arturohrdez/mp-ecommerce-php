@@ -5,7 +5,7 @@ require __DIR__ .  '/vendor/autoload.php';
 ?>
 
 <!-- SDK MercadoPago.js V2 -->
-<script type="text/javascript" src="https://www.mercadopago.com/v2/security.js" view="detail.php"></script>
+<script type="text/javascript" src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
 <?php
 //Inicializa SDK
